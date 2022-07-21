@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+    html{
+      font-size:70%;
+
+    }  
+     :root{
+     --Violet: hsl(257, 40%, 49%);
+     --SoftMagenta: hsl(300, 69%, 71%);
+}
+  
+
+    
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    body{
+      font-family: 'Open Sans', sans-serif;
+      color: white;
+      background-color: var(--Violet);
+      background-image: url(images/bg-mobile.svg);
+      background-repeat: no-repeat;
+      background-size: 100%;
+      width: 100vw;
+      height: 100vh;
+
+  }
+  main{
+    width: 37.063em;
+    height: 1446px;
+    margin: 75px auto 40px;}
+
+
+  
+   /*------------section--1------------------------*/
+   #section1{
+    height: 728px;
+   }
+   #logo-container{
+    width: 100vw;
+   }
+   #mockup-container img{
+    width: 92%;
+   }
+   #mockup-container {
+    width: 100vw;
+    padding-top: 9em;
+   }
+
+      /*------------section--2------------------------*/
+      #section2 {
+        height: 728px;}
+       #section2 p {font-size: 1.938em;
+        text-align: center;
+        height: 17.5em;
+
+      
+      }
+       .btn-Register{
+        text-align: center;
+        margin-bottom: 122px;
+       }
+       .btn-Register a{
+             width: 400px;
+             height: 86px;
+             border-radius: 50px;
+             font-size: 25px;
+             color: var(--Violet);
+             background-color: white;
+             display: inline-block;
+             padding-top: 22px;
+             text-decoration: none;
+       }
+       .modal1{
+        position: fixed;
+        width: 300px;
+        height: 350px;
+        background-color: white;
+        display: grid;
+        right: 10%;
+        top: 20%;
+        border-radius:10px ;
+        visibility: hidden;
+        background-image: url(images/bg-mobile.svg);
+       }
+       
+       .modal1 h1{
+        margin: 0;
+        padding: 0;
+        font-size: 1.875em;
+        top: 10px;
+        color: var(--Violet);
+        text-align: center;
+        height: 22px;
+       }
+       form{
+        height: 250px;
+       }
+       .modal1 p{
+        color: var(--Violet);
+        margin-left: 1.938em;
+        margin-bottom: 10px;
+       }
+       .modal1 a{
+        text-decoration: none;
+        width: 20px;
+        margin-left: 280px;
+        font-size: 15px;
+        color: papayawhip;
+       }
+       #section3{
+        width: 300px;
+        height: 26px;
+        background-color:rgba(0, 0,0,1);
+        border-radius: 10px 10px 0px 00px;
+       }
+       .modal1:target{
+        visibility: visible;
+       }
+       input{
+        width: 100px;
+       }
+       #Signup{
+        margin-left: 40px;
+        margin-top: 20px;
+        border: 0px;
+        width: 200px;
+             height: 35px;
+             border-radius:50px ;
+            background-color: var(--SoftMagenta);
+            color: beige;
+       }
+       #Signup:hover{
+        background-color: darkmagenta;
+       }
+       .btn-Register a:hover{
+        background-color:var(--SoftMagenta);
+        color: white;
+       }
+       .SOCIAL{
+        text-align: center;
+       }
+       .redes{
+        width: 208px;
+      display: inline-flex;
+      justify-content: space-between;
+    }
+       .redes a{
+       border: 2px  solid white;
+       text-decoration: none;
+       color: white;
+       width: 60px;
+       height: 60px;
+       border-radius: 50%;
+       font-size: 28px;
+        padding-top: 12px;
+       }
+       .redes a:hover{
+        border-color:var(--SoftMagenta);
+        color: var(--SoftMagenta);
+       }
+      h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.875em;
+    text-align: center;
+    height: 170px;
+  }
+  #text1{
+    margin-left: 40px;
+  }
+  #text2{
+    margin-left: 40px;
+  }
+      footer{
+        visibility: hidden;
+      }                
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media only screen and (min-width:1024px){
+      main{
+        margin: 60px auto 0px;
+        width: 1284px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+      body{
+        background-image: url(images/bg-desktop.svg);
+        background-size: 85%;
+      }
+         /*------------section--1------------------------*/
+     #section1{
+      width: 753px;
+      height: 700px;
+     }
+     #logo-container{
+      height: 134px;
+      margin-bottom: 0px;
+     }
+     #mockup-container{
+      width: 696px;
+      padding-top: 0%;
+     }
+
+           /*------------section--2------------------------*/
+    #section2{
+      height: 700px;
+    }
+    h1{margin-top: 165px;
+    height: 133px;
+  font-size: 39px;
+   text-align: left;
+  padding-right: 93px;}
+
+  #section2 p{
+    height: 98px;
+    font-size: 18px;
+    text-align: left;
+    padding-right: 17px;
+  }
+.btn-Register{
+  text-align: left;
+  margin-bottom: 11.188em;
+}
+
+.modal1{ right: 30%;}
+
+.btn-Register a{
+
+  text-align: center;
+  width: 200px;
+  height: 58px;
+  font-size: 20px;
+  padding-top: 14px;
+}
+.SOCIAL{
+
+  text-align: right;}
+.redes{
+  width: 156px;
+}
+.redes a{
+  width: 44px;
+  height: 44px;
+  font-size: 22px;
+  padding: 8px;
+  text-align: center;
+}
+footer{
+  visibility: visible;
+}
+    }
+  </style>
+</head>
+<body >
+     <main>
+       <!--section1-->
+           <div id="section1">
+               <div id="logo-container">
+                <img src="images/logo.svg" alt="logo" >
+                </div>
+                 <div id="mockup-container">
+                 <img  id="mockup" src="images/illustration-mockups.svg" alt="illustration" >
+                 </div>
+           </div>
+          <!--section2-->
+          <section id="section2" >
+          <h1>Build The Community Your Fans Will Love</h1>
+           <p  >Huddle re-imagines the way we build communities. You have a voice, but so does your audience.
+           Create connections with your users as you engage in genuine discussion.</p>
+          <div class="btn-Register" >
+            <a href="#modal"> Register</a>
+          
+          </div>
+          
+          <div class="SOCIAL">
+              <div class="redes">
+                <a href="https://www.facebook.com/" class="fa-brands fa-facebook-f"></a>
+                <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D" class="fa-brands fa-twitter"></a>
+                <a href="https://www.instagram.com/" class="fa-brands fa-instagram"></a>
+              </div>
+            </div>
+          </section>
+     </main>
+      <footer>
+         <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Michel S. R.</a>.
+         </p>
+      </footer>
+      <script src="https://kit.fontawesome.com/d7d376580d.js" crossorigin="anonymous"></script>
+    <section id="modal" class="modal1">
+      
+        <div id="section3"><a href="">x</a></div>
+       <h1>Create your account</h1>
+      <form >
+        <p  id="text1"><label for="Iname">Name:</label>
+        <input type="text" name="fname"  maxlength="40" size="12" title="full name"  id="Iname">
+        </p>   
+        <p id="text2">
+          <label for="Iemail">E-mail:          </label>
+          <input type="email" name="E-mail" id="Iemail" title="E-mail">
+        </p>
+        <p><label for="INickname">Nickname:</label>
+           <input type="text" name="Nickname"  maxlength="6" size="12" title="Nickname" id="INickname">
+        </p>
+     
+        <p>
+          <label for="Ipassword">  password: </label>
+          <input type="password" maxlength="10" size="12" name="password" title="password" id="Ipassword" >
+        </p>
+        <p>
+        <input type="submit" value="Sign up" id="Signup">
+        </p>
+      </form>
+    </section>
+</body>
+</html>
